@@ -1,0 +1,24 @@
+[project]
+name = "pyd-app"
+version = "0.1.0"
+description = "Minimal Pydantic AI application scaffold"
+readme = "README.md"
+authors = [
+    { name = "bb220", email = "bb220@users.noreply.github.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "pydantic-ai>=1.87.0",
+    "python-dotenv>=1.2.2",
+]
+
+[build-system]
+requires = ["uv_build>=0.10.11,<0.11.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "pyright>=1.1.409",
+    "pytest>=9.0.3",
+    "ruff>=0.15.12",
+]
