@@ -1843,6 +1843,7 @@ source = { editable = "." }
 dependencies = [
     { name = "logfire" },
     { name = "pydantic-ai" },
+    { name = "pydantic-ai-slim", extra = ["web"] },
     { name = "python-dotenv" },
 ]
 
@@ -1857,6 +1858,7 @@ dev = [
 requires-dist = [
     { name = "logfire", specifier = ">=4.32.1" },
     { name = "pydantic-ai", specifier = ">=1.87.0" },
+    { name = "pydantic-ai-slim", extras = ["web"], specifier = ">=1.87.0" },
     { name = "python-dotenv", specifier = ">=1.2.2" },
 ]
 
@@ -1982,6 +1984,11 @@ ui = [
 vertexai = [
     { name = "google-auth" },
     { name = "requests" },
+]
+web = [
+    { name = "httpx" },
+    { name = "starlette" },
+    { name = "uvicorn" },
 ]
 xai = [
     { name = "xai-sdk" },

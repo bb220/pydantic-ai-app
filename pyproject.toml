@@ -10,6 +10,7 @@ requires-python = ">=3.12"
 dependencies = [
     "logfire>=4.32.1",
     "pydantic-ai>=1.87.0",
+    "pydantic-ai-slim[web]>=1.87.0",
     "python-dotenv>=1.2.2",
 ]
 
