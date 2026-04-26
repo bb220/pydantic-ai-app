@@ -4,6 +4,7 @@ from pydantic_ai import Agent
 from pydantic_ai.models import Model
 
 from pyd_app.config import get_model_name
+from pyd_app.observability import setup_logfire
 
 HELLO_WORLD_PROMPT = "Where does 'hello world' come from?"
 
@@ -18,4 +19,5 @@ def run_hello_world(model: Model | str | None = None) -> str:
 
 
 def main() -> None:
+    setup_logfire()
     print(run_hello_world())

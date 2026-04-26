@@ -1841,6 +1841,7 @@ name = "pyd-app"
 version = "0.1.0"
 source = { editable = "." }
 dependencies = [
+    { name = "logfire" },
     { name = "pydantic-ai" },
     { name = "python-dotenv" },
 ]
@@ -1854,6 +1855,7 @@ dev = [
 
 [package.metadata]
 requires-dist = [
+    { name = "logfire", specifier = ">=4.32.1" },
     { name = "pydantic-ai", specifier = ">=1.87.0" },
     { name = "python-dotenv", specifier = ">=1.2.2" },
 ]
